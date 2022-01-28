@@ -14,6 +14,7 @@ public class Criteria {
 	private int folderCOunt;
 	private String extension = null;
 	private Path folderPath = null;
+	private String folderName;
 	
 	
 	// constructor
@@ -22,8 +23,17 @@ public class Criteria {
 		this.folderPath = folderPath;
 		this.fileCount = 0;
 		this.folderCOunt = 0;
+//		this.folderName = String.valueOf(folderPath.toString()).split("\\")[String.valueOf(folderPath.toString()).split("\\").length -1];
 	}
 	
+	public String getFolderName() {
+		return folderName;
+	}
+
+	public void setFolderName(String folderName) {
+		this.folderName = folderName;
+	}
+
 	// default constructor
 	public Criteria() {
 		this.extension = null;

@@ -2,6 +2,7 @@ package main.kiprono.driver;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.regex.Pattern;
 
 import main.kiprono.models.Criteria;
 import main.kiprono.utils.Keyboard;
@@ -21,8 +22,14 @@ public class Driver {
 		myCriteria.setExtension(extension);
 		myCriteria.setFolderPath(path);
 		
-		System.out.println("There are: " + countFiles(myCriteria) + " " + extension + " files discovered." );
-		System.out.println("There are: " + countFolders(myCriteria) + " folders discovered.");
+		//split the path by \ then access last element representing  the folder
+		
+		myCriteria.setFolderName(path.toString().split(Pattern.quote("\\"))[path.toString().split(Pattern.quote("\\")).length - 1]);
+		
+		//this.folderName = String.valueOf(folderPath.toString()).split("\\")[String.valueOf(folderPath.toString()).split("\\").length -1];
+		
+		System.out.println("There are: " + countFiles(myCriteria) + " " + extension + " files discovered in " + myCriteria.getFolderName());
+		System.out.println("There are: " + countFolders(myCriteria) + " folders discovered in " + myCriteria.getFolderName());
 		
 		
 	}
