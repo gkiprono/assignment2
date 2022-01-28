@@ -19,9 +19,13 @@ Goal is to count markdown files in this project folder
 
 ```***********************************```
 ```Enter the path: C:\Gabriel\Eclipse\Assignment2```
+
 ```What Extension: java```
+
 ```There are: 3 java files discovered in Assignment2```
+
 ```There are: 90 folders discovered in Assignment2```
+
 ``````
 
 Number of folders is high because of .git folder
