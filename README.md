@@ -10,7 +10,7 @@ Create a program to count how many files/folders are there inside one folder.
 - Optional: Take the input from keyboard.
 - Take care of the invalid inputs. Exception handling.
 - Get proper result displayed.
-îThere are XXX file(s) and XXX folder(s) inside folder XXX with extension XXX.î or something user friendly.
+‚ÄùThere are XXX file(s) and XXX folder(s) inside folder XXX with extension XXX.‚Äù or something user friendly.
 
 
 Goal is to count markdown files in this project folder
@@ -18,10 +18,10 @@ Goal is to count markdown files in this project folder
 ### Sample output
 
 ```***********************************```
-Enter the path: C:\Gabriel\Eclipse\Assignment2
-What Extension: java
-There are: 3 java files discovered in Assignment2
-There are: 90 folders discovered in Assignment2
+`Enter the path: C:\Gabriel\Eclipse\Assignment2`
+`What Extension: java`
+`There are: 3 java files discovered in Assignment2`
+`There are: 90 folders discovered in Assignment2`
 ``````
 
 Number of folders is high because of .git folder
