@@ -28,18 +28,15 @@ public class Driver {
 		
 		//this.folderName = String.valueOf(folderPath.toString()).split("\\")[String.valueOf(folderPath.toString()).split("\\").length -1];
 		
-		System.out.println("There are: " + countFiles(myCriteria) + " " + extension + " files discovered in " + myCriteria.getFolderName());
-		System.out.println("There are: " + countFolders(myCriteria) + " folders discovered in " + myCriteria.getFolderName());
+		count(myCriteria);
+		
 		
 		
 	}
 	
-	public static int countFiles(Criteria criteria) {
-		return criteria.searchFile();
+	public static void count(Criteria criteria) {
+		System.out.println("There are: " + criteria.searchFile() + " " + criteria.getExtension() + " files discovered in " + criteria.getFolderName());
+		System.out.println("There are: " + criteria.searchFolder() + " folders discovered in " + criteria.getFolderName());
 	}
 	
-	public static int countFolders(Criteria criteria) {
-		return criteria.searchFolder();
-	}
-
 }
